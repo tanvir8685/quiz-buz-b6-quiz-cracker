@@ -16,7 +16,7 @@ const QuizSub = ({quiz}) => {
               </Card.Text> */}
               <div className='d-flex justify-content-around'>
                 <h3>There are {total} qustion</h3>
-              <Link to={`quiz/${id}`}><Button>next</Button></Link>
+              <Link to={`/${id}`}><Button>next</Button></Link>
                 
               </div>
               

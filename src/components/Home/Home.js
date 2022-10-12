@@ -8,7 +8,7 @@ import QuizSub from '../QuizSub/QuizSub';
 const Home = () => {
     const loadquizSubject=useLoaderData();
     const quizSubjects=loadquizSubject.data;
-    console.log(quizSubjects)
+    // console.log(quizSubjects)
 
     return (
         <div>
