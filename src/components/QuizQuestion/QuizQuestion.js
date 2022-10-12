@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 import Options from '../Options/Options';
 
 const QuizQuestion = ({qustion}) => {
-    console.log(qustion.correctAnswer)
+    // console.log(qustion.correctAnswer)
     const[correct,setCorrect]=useState();
     const correctbtn=(id)=>{
         console.log('clicked',id)
