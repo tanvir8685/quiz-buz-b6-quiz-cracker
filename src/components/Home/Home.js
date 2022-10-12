@@ -1,8 +1,14 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import { useLoaderData } from 'react-router-dom';
+import QuizSub from '../QuizSub/QuizSub';
 
 
 const Home = () => {
+    const loadquizSubject=useLoaderData();
+    const quizSubjects=loadquizSubject.data;
+    console.log(quizSubjects)
+
     return (
         <div>
             
@@ -12,7 +18,7 @@ const Home = () => {
       <Card.ImgOverlay>
         <Card.Title className='h-25 text-center fw-bold fs-1 mt-10 text-info' >Welcome to your Quiz</Card.Title>
         <Card.Text className='h-25 text-center fw-bold fs-1 mt-10 '>
-          Choice your Subject wisely you have to very serious in this 
+          Choice your Subject wisely you have to serious in this 
         </Card.Text>
         <Card.Text  className='h-25 text-center fw-bold fs-1 mt-10'>Good Luck</Card.Text>
       </Card.ImgOverlay>
@@ -23,7 +29,11 @@ const Home = () => {
             
 
             <div className='mt-5'>
-                <h1>Our main content</h1>
+                {
+                    quizSubjects.map(quiz=><QuizSub
+                    key={quiz.id}
+                    quiz={quiz}></QuizSub>)
+                }
             </div>
 
 
