@@ -5,13 +5,14 @@ import QuizQuestion from '../QuizQuestion/QuizQuestion';
 
 const Quiz = () => {
     const loadQuizQustion=useLoaderData();
+    // console.log(loadQuizQustion.data.name)
     const qustions=(loadQuizQustion.data.questions);
-    console.log(qustions)
+    // console.log(qustions)
    
     
     return (
         <div>
-            <h2>This is Quiz</h2>
+            <h2>This is Quiz about {loadQuizQustion.data.name}</h2>
             {
 qustions.map(qustion=><QuizQuestion  key={qustion.id} qustion={qustion}></QuizQuestion>)
    }
