@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { useLoaderData } from 'react-router-dom';
 import QuizSub from '../QuizSub/QuizSub';
@@ -29,11 +30,13 @@ const Home = () => {
             
 
             <div className='mt-5'>
+            <Row xs={1} md={2} className="g-4">
                 {
                     quizSubjects.map(quiz=><QuizSub
                     key={quiz.id}
                     quiz={quiz}></QuizSub>)
                 }
+                </Row>
             </div>
 
 
