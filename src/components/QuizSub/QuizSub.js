@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const QuizSub = ({quiz}) => {
     const{id,name,logo,total}=quiz;
@@ -15,7 +16,7 @@ const QuizSub = ({quiz}) => {
               </Card.Text> */}
               <div className='d-flex justify-content-around'>
                 <h3>There are {total} qustion</h3>
-              <Button>next</Button>
+              <Link to={`quiz/${id}`}><Button>next</Button></Link>
                 
               </div>
               

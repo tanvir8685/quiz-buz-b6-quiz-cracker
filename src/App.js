@@ -21,12 +21,16 @@ function App() {
           element:<Home></Home>
         },
         {
-          path:'/quiz',
+          path:':quiz/quizId',
+          loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`),
           
           element:<Quiz></Quiz>
         }
       ]
 
+    },
+    {
+      path:'*',element:<div>This route not found</div>
     }
   ])
   return (
