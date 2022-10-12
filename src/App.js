@@ -35,7 +35,7 @@ function App() {
 
     },
     {
-      path:'*',element:<div>This route not found</div>
+      path:'/*',element:<div>This route not found</div>
     }
   ])
   return (

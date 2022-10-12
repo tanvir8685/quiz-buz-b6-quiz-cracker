@@ -14,8 +14,8 @@ const Quiz = () => {
         <div>
             <h2>This is Quiz about {loadQuizQustion.data.name}</h2>
             {
-qustions.map(qustion=><QuizQuestion  key={qustion.id} qustion={qustion}></QuizQuestion>)
-   }
+                    qustions.map(qustion=><QuizQuestion  key={qustion.id} qustion={qustion}></QuizQuestion>)
+            }
         </div>
     );
 };
