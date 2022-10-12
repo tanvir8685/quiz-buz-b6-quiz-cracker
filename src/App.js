@@ -1,5 +1,5 @@
 
-import { Button } from 'react-bootstrap';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
@@ -27,8 +27,8 @@ function App() {
     }
   ])
   return (
-    <div className="App">
-      <Button variant="danger">Check</Button>
+    <div >
+      
       <RouterProvider router={router} ></RouterProvider>
     </div>
   );
