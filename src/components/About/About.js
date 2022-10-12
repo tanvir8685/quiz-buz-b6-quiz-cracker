@@ -1,9 +1,10 @@
 import React from 'react';
+import { Accordion } from 'react-bootstrap';
 
 const About = () => {
     return (
         <div>
-            <h1>Insallah it will done</h1>
+            
         </div>
     );
 };

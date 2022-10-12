@@ -3,6 +3,7 @@
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
 
@@ -30,12 +31,17 @@ function App() {
         {
           path:'/about',
           element:<About></About>
+        },
+        {
+          path:'/blog',
+          element:<Blog></Blog>
         }
+        
       ]
-
+     
     },
     {
-      path:'/*',element:<div>This route not found</div>
+      path:'*',element:<div>This route not found</div>
     }
   ])
   return (
